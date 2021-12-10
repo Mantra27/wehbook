@@ -11,5 +11,5 @@ hook.on('rage', 'mantra').then((e)=>{
     console.log('hi');
 })  
 ```
-``rage`` event stands for standard webhook service (no extra input from trigger URL);
+>``'rage'`` event stands for standard webhook service (no extra input from trigger URL);
 meanwhile im working on ``node`` event, in which wehbook you can also send text nodes from trigger-client to listener client.
