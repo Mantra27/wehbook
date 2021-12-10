@@ -1,5 +1,5 @@
 # wehbook
-## i didn't spell it wrong;
+## I didn't spell it wrong;
 
 
 >listener code(client):
