@@ -8,7 +8,7 @@
 const { Wehbook } = require('./npm')
 const hook = new Wehbook();
 
-//.    rage = type of webhook, 844920 = wehbook id;
+//rage = type of webhook, 844920 = wehbook id;
 hook.on('rage', 844920).then(()=>{
     console.log('event triggered');
 })  
