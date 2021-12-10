@@ -22,4 +22,4 @@ URL to trigger wehbook;
 ```
 https://wehbook.mantragohil.repl.co/trigger?id=844920
 ```
-just make your new id and replace in example code and trigger url and youre good to go.
+Just make your new id and replace in example code and trigger url and you're good to go.
