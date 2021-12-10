@@ -25,4 +25,5 @@ https://wehbook.mantragohil.repl.co/trigger?id=844920
 Just make your new id and replace in example code and trigger url and you're good to go.
 
 here's the landing page that makes no sense for this repo :)
-[LANDING PAGE]('https://wehbook.mantragohil.repl.co/')
+
+[LANDING PAGE](https://wehbook.mantragohil.repl.co/)
