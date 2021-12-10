@@ -27,4 +27,5 @@ Just make your new id and replace in example code and trigger url and you're goo
 here's the landing page that makes no sense for this repo :)
 
 [LANDING PAGE](https://wehbook.mantragohil.repl.co/)
-https://github.com/Mantra27/wehbook/blob/main/.assets/.img/Screenshot%202021-12-10%20at%2011.53.42%20PM.png?raw=true
+
+[Pre](https://github.com/Mantra27/wehbook/blob/main/.assets/.img/Screenshot%202021-12-10%20at%2011.53.42%20PM.png?raw=true)
