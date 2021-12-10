@@ -1,5 +1,5 @@
 const app = require('express')();
-const port = 9090;
+const port = 6969;
 var events = require('events');
 var _trigger = new events.EventEmitter();
 const fs = require('fs');
@@ -56,7 +56,7 @@ app.get('/trigger', async (req, res, next) => {
     })
 
         app.get('/*', async (req, res, next) => {
-            console.log('anything trigger');
+            console.log('user redirected');
             res.redirect('/')
         })
 
