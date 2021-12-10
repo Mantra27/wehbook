@@ -1,5 +1,5 @@
 const app = require('express')();
-const port = 6969;
+const port = 9090;
 var events = require('events');
 var _trigger = new events.EventEmitter();
 const fs = require('fs');
@@ -10,13 +10,17 @@ _trigger.on('request', async (e)=>{
 })
 
 app.get('/', async (req, res, next) => {
-    res.send('welcome the this server');
+    res.sendFile(`${__dirname}/trigger.html`);
 })
 
+app.get('/array', async(req, res, next)=>{
+  return res.send(meta)
+})
 //.get('/trigger') is used to trigger the event from the 
 app.get('/trigger', async (req, res, next) => {
-    console.log(req.query.usr ?? "internal err: no wehbook variable name")
-    if(req.query.usr){
+    console.log(meta)
+    console.log(req.query.id ?? "internal err: no wehbook variable name")
+    if(req.query.id){
         res.send(`<!DOCTYPE html>
         <html lang="en">
         <head>
@@ -34,13 +38,13 @@ app.get('/trigger', async (req, res, next) => {
         </html>`)
     }
 
-        meta[meta.length - 1] = req.query.usr;
+        meta[meta.length - 1] = req.query.id;
 })
 
     app.get('/rage', async (req, res, next) => {
         for(index in meta){
 
-            if(meta[index] == req.query.usr){
+            if(meta[index] == req.query.id){
                 console.log(`wehbook got triggered at index ${index}`);
 
                 setTimeout(()=>{
@@ -52,11 +56,11 @@ app.get('/trigger', async (req, res, next) => {
 
         }
 
-        return res.send(req.query.usr);
+        return res.send(req.query.id);
     })
 
         app.get('/*', async (req, res, next) => {
-            console.log('user redirected');
+            console.log('anything trigger');
             res.redirect('/')
         })
 
