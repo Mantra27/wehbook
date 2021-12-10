@@ -6,9 +6,8 @@ Client node.js code to listen to wehbook requests.
 const { Wehbook } = require('./npm')
 const hook = new Wehbook();
 
-hook.on('rage', 844920).then((e)=>{
-    console.log(e);
-    console.log('hi');
+hook.on('rage', 844920).then(()=>{
+    console.log('event triggered');
 })  
 ```
 
