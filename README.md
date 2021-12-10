@@ -20,6 +20,6 @@ meanwhile im working on ``node`` event, in which wehbook you can also send text 
 Here's the URL to trigger specific webhook via unique ``id`` (you have to put it into listener code replacing ``844920`` in example code)
 URL to trigger wehbook;
 ```
-https://wehbook.mantragohil.repl.co
+https://wehbook.mantragohil.repl.co/trigger?id=844920
 ```
-
+just make your new id and replace in example code and trigger url and youre good to go.
