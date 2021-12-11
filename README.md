@@ -9,14 +9,12 @@ const { Wehbook } = require('./npm')
 const hook = new Wehbook();
 
 //rage = type of webhook, 844920 = wehbook id;
-hook.on(844920), async ()=>{
+hook.on(844920, async ()=>{
     console.log("Event Triggered");
 })
 ```
 
->``'rage'`` event stands for standard webhook service (no extra input from trigger URL);
-meanwhile im working on ``node`` event, in which wehbook you can also send text nodes from trigger-client to listener client.
-
+>``hook.on`` have 2 arguments, 1st is for wehbook id(which is 844920 in this case) and 2nd one is callback function that you want to be executed when wehbook is triggred.
 Here's the URL to trigger specific webhook via unique ``id`` (you have to put it into listener code replacing ``844920`` in example code)
 URL to trigger wehbook;
 ```
