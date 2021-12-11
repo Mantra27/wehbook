@@ -9,9 +9,9 @@ const { Wehbook } = require('./npm')
 const hook = new Wehbook();
 
 //rage = type of webhook, 844920 = wehbook id;
-hook.on('rage', 844920).then(()=>{
-    console.log('event triggered');
-})  
+hook.on(844920), async ()=>{
+    console.log("Event Triggered");
+})
 ```
 
 >``'rage'`` event stands for standard webhook service (no extra input from trigger URL);
