@@ -3,7 +3,6 @@
 
 ![](https://img.shields.io/github/size/Mantra27/wehbook/src/npm/npm.js)
 ![](https://img.shields.io/github/license/mantra27/wehbook)
-
 ![](https://img.shields.io/npm/v/wehbook)
 ![](https://img.shields.io/github/commit-activity/y/Mantra27/wehbook)
 
