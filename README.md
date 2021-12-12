@@ -1,7 +1,7 @@
 # wehbook
 ## I didn't spell it wrong;
 
-!(https://img.shields.io/github/size/Mantra27/wehbook/src/npm/npm.js)
+![](https://img.shields.io/github/size/Mantra27/wehbook/src/npm/npm.js)
 >listener code(client):
 
 ```javascript
