@@ -7,28 +7,34 @@ class Wehbook{
         this.input = input;
     };
 
-    on(work, sol){
+    on(sol, funk){
        let check = sol;
-       console.log(`- Listening to variable ${sol} using method ${work}.`, `listening to *https://wehbook.mantragohil.repl.co/trigger?id=${sol}*`)
-        
-            const promise1 = new Promise(async (resolve, reject)=>{
+       console.log(`- Listening to variable ${sol}`, `listening to https://wehbook.mantragohil.repl.co/trigger?id=${sol}`)
+    let phase = 0;
 
+       let clock = (e)=>{
+           setInterval(()=>{
+            phase = e + 10;
+            e = phase;
+           }, 100)
+       }
+       
             setInterval(async ()=>{
-
+                
                 const response = await fetch(`https://wehbook.mantragohil.repl.co/rage?id=${check}`);
                 const body = await response.text();
-
+                await clock(0);
                     if(body == 'ok'){
-                        resolve(body);
-                        this.on();
+                        await funk({body:body, time: new Date(), latency: phase});
+                    }
+                    else{
+
                     }
 
             }, 500)
 
-    });
-
-       return promise1;
     }
+   
 }
 
 module.exports = {
