@@ -4,6 +4,7 @@ var events = require('events');
 var _trigger = new events.EventEmitter();
 const fs = require('fs');
 let meta = [];
+// meta[] is the most important part in this project, motha of all array ;o
 
 _trigger.on('request', async (e)=>{
     console.log(`someone executed ${e} over the internet`)
