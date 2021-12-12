@@ -6,15 +6,16 @@
 
 ![](https://img.shields.io/npm/v/wehbook)
 ![](https://img.shields.io/github/commit-activity/y/Mantra27/wehbook)
->listener code(client):
+
+>Listener code (client)
 
 ```javascript
-const { Wehbook } = require('./npm')
+const { Wehbook } = require('wehbook')
 const hook = new Wehbook();
 
-//rage = type of webhook, 844920 = wehbook id;
-hook.on(844920, async ()=>{
-    console.log("Event Triggered");
+//844920 = wehbook id (you can use unique one to avoid collisions);
+hook.on(844920, async (e)=>{
+    console.log("Event Triggered", e);
 })
 ```
 
@@ -27,6 +28,7 @@ https://wehbook.mantragohil.repl.co/trigger?id=844920
 Just make your new id and replace in example code and trigger url and you're good to go.
 
 here's the landing page that makes no sense for this repo :)
+i didn't spell it worng btw :) (this ethier)
 
 [LANDING PAGE](https://wehbook.mantragohil.repl.co/)
 
