@@ -18,7 +18,7 @@ hook.on(844920, async (e)=>{
 })
 ```
 
->``hook.on()ß`` have 2 arguments, 1st is for wehbook id(which is 844920 in this case) and 2nd one is callback function that you want to be executed when wehbook is triggred.
+>``hook.on()`` have 2 arguments, 1st is for wehbook id(which is 844920 in this case) and 2nd one is callback function that you want to be executed when wehbook is triggred.
 Here's the URL to trigger specific webhook via unique ``id`` (you have to put it into listener code replacing ``844920`` in example code)
 URL to trigger wehbook;
 ```
