@@ -25,7 +25,8 @@ URL to trigger wehbook;
 ```
 https://wehbook.mantragohil.repl.co/trigger?id=844920
 ```
-In case if you also want to send text node with the trigger webhook, you can do that with this pkg. You just have to add extra ``&text=<message>`` argument in the trigger URL, and it would look like this: 
+In case if you also want to send text node with the trigger webhook, you can do that with this pkg.
+You just have to add extra ``&text=<message>`` argument in the trigger URL, and it would look like this: 
 
 ```
 https://wehbook.mantragohil.repl.co/trigger?id=844920&text=hola
