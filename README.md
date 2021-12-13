@@ -31,8 +31,10 @@ You just have to add extra ``&text=<message>`` argument in the trigger URL, and 
 ```
 https://wehbook.mantragohil.repl.co/trigger?id=844920&text=hola
 ```
-If you havent added ``&text=`` argument in the trigger url, server will return default text message to the listener code (npm pkg)
-Just make your new id and replace in example code and trigger url and you're good to go.
+If you havent added ``&text=`` argument in the trigger url, server will return default text message to the listener code (npm pkg).
+
+
+Just make your new id (or text message) and replace it in example code and trigger url and you're good to go.
 
 here's the landing page that makes no sense for this repo :)
 i didn't spell this pkg worng btw :) (this either)
