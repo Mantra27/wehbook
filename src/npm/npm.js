@@ -9,7 +9,7 @@ class Wehbook{
 
     on(sol, funk){
        let check = sol;
-       console.log(`- Listening to variable ${sol}`, `listening to https://wehbook.mantragohil.repl.co/trigger?id=${sol}`)
+       console.log(`- Listening to variable ${sol}`, `listening to https://wehbook.online/trigger?id=${sol}`)
     let phase = 0;
 
        let clock = (e)=>{
@@ -21,7 +21,7 @@ class Wehbook{
        
             setInterval(async ()=>{
                 
-                const response = await fetch(`https://wehbook.mantragohil.repl.co/rage?id=${check}`);
+                const response = await fetch(`https://wehbook.online/rage?id=${check}`);
                 const body = await response.text();
                 await clock(0);
                     if(body == 'ok'){
