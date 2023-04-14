@@ -23,13 +23,13 @@ hook.on(844920, async (e)=>{
 Here's the URL to trigger specific webhook via unique ``id`` (you have to put it into listener code replacing ``844920`` in example code)
 URL to trigger wehbook;
 ```
-https://wehbook.mantragohil.repl.co/trigger?id=844920
+https://wehbook.online/trigger?id=844920
 ```
 In case if you also want to send text node with the trigger webhook, you can do that with this pkg.
 You just have to add extra ``&text=<message>`` argument in the trigger URL, and it would look like this: 
 
 ```
-https://wehbook.mantragohil.repl.co/trigger?id=844920&text=hola
+https://wehbook.online/trigger?id=844920&text=hola
 ```
 If you havent added ``&text=`` argument in the trigger url, server will return default text message to the listener code (npm pkg).
 
